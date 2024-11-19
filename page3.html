@@ -33,67 +33,41 @@
     </div>
   </nav>
 
-  <h1>Learn More About Tajikistan - Function 3: Adds interactive collapsible sections to display more information on user demand</h1>
+  <h1>Learn More About Tajikistan - Function 3: Enhanced Accordion Control</h1>
 
   <div class="container">
-    <div class="row">
-      <div class="col-md-6 mb-3">
-        <!-- Button trigger modal -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#geographyInfo" aria-expanded="false" aria-controls="geographyInfo">
-          Geography
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse" id="geographyInfo">
-          <div class="card card-body">
+    <div class="accordion" id="faqAccordion">
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" onclick="toggleAccordion('collapseOne')">
+            Geography
+          </button>
+        </h2>
+        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
             Tajikistan is a landlocked country in Central Asia. About 93% of its territory is mountainous.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-3">
-        <!-- Button trigger modal -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#languageInfo" aria-expanded="false" aria-controls="languageInfo">
-          Language
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse" id="languageInfo">
-          <div class="card card-body">
-            Tajik is the official language of Tajikistan, closely related to Persian (Farsi).
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-3">
-        <!-- Button trigger modal -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#climateInfo" aria-expanded="false" aria-controls="climateInfo">
-          Climate
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse" id="climateInfo">
-          <div class="card card-body">
-            Tajikistan has a continental climate, with hot summers and very cold winters.
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-6 mb-3">
-        <!-- Button trigger modal -->
-        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#economyInfo" aria-expanded="false" aria-controls="economyInfo">
-          Economy
-        </button>
-        <!-- Collapsible content -->
-        <div class="collapse" id="economyInfo">
-          <div class="card card-body">
-            The economy of Tajikistan is highly dependent on agriculture, remittances, and aluminum production.
           </div>
         </div>
       </div>
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
-    // Function 3: Adds interactive collapsible sections to display more information on user demand.
+    // Function to toggle accordion collapse
+    function toggleAccordion(collapseId) {
+      var elem = document.getElementById(collapseId);
+      if (elem.classList.contains('show')) {
+        elem.classList.remove('show');
+      } else {
+        var allPanels = document.querySelectorAll('.accordion-collapse');
+        for (var i = 0; i < allPanels.length; i++) {
+          allPanels[i].classList.remove('show');
+        }
+        elem.classList.add('show');
+      }
+    }
   </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
