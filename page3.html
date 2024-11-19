@@ -1,88 +1,99 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page 3</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page 3</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="page3.html">Page 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page4.html">Page 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page5.html">Page 5</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Learn More About Tajikistan - Function 3: Adds interactive collapsible sections to display more information on user demand</h1>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#geographyInfo" aria-expanded="false" aria-controls="geographyInfo">
+          Geography
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="page2.html">Page 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page3.html">Page 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page4.html">Page 4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page5.html">Page 5</a>
-            </li>
-          </ul>
+        <!-- Collapsible content -->
+        <div class="collapse" id="geographyInfo">
+          <div class="card card-body">
+            Tajikistan is a landlocked country in Central Asia. About 93% of its territory is mountainous.
+          </div>
         </div>
       </div>
-    </nav>
-    
-<h1>Learn More About Tajikistan</h1>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Geography
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Tajikistan is a landlocked country, with about 93% of its area being mountainous.</a></li>
-            </ul>
+      <div class="col-md-6 mb-3">
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#languageInfo" aria-expanded="false" aria-controls="languageInfo">
+          Language
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse" id="languageInfo">
+          <div class="card card-body">
+            Tajik is the official language of Tajikistan, closely related to Persian (Farsi).
           </div>
         </div>
+      </div>
 
-        <div class="col-md-6 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Language
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Tajik is the official language of Tajikistan, which is closely related to Persian.</a></li>
-            </ul>
+      <div class="col-md-6 mb-3">
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#climateInfo" aria-expanded="false" aria-controls="climateInfo">
+          Climate
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse" id="climateInfo">
+          <div class="card card-body">
+            Tajikistan has a continental climate, with hot summers and very cold winters.
           </div>
         </div>
+      </div>
 
-        <div class="col-md-6 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Climate
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Tajikistan experiences a continental climate with hot summers and cold winters.</a></li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="col-md-6 mb-3">
-          <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Economy
-            </button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">The economy of Tajikistan largely depends on agriculture, mining, and remittances from abroad.</a></li>
-            </ul>
+      <div class="col-md-6 mb-3">
+        <!-- Button trigger modal -->
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#economyInfo" aria-expanded="false" aria-controls="economyInfo">
+          Economy
+        </button>
+        <!-- Collapsible content -->
+        <div class="collapse" id="economyInfo">
+          <div class="card card-body">
+            The economy of Tajikistan is highly dependent on agriculture, remittances, and aluminum production.
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Function 3: Adds interactive collapsible sections to display more information on user demand.
+  </script>
+</body>
 </html>
