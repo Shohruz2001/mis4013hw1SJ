@@ -1,100 +1,112 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page5</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0">
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" href="page2.html">Page 2</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page3.html">Page 3</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page4.html">Page 4</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="page5.html">Page 5</a>
-            </li>
-          </ul>
-        </div>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Page 5</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    .scrollspy-example {
+      position: relative;
+      height: 200px;
+      overflow: auto;
+    }
+    .nav-pills .nav-link {
+      border-radius: 0;
+    }
+  </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-smooth-scroll="true" tabindex="0">
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Home</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="page2.html">Page 2</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page3.html">Page 3</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="page4.html">Page 4</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="page5.html">Page 5</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-
-    <!-- Scrollspy Navbar -->
-    <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#section1">Geography</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section2">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section3">Economy</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#section4">Tourism</a>
-        </li>
-      </ul>
-    </nav>
-
-    <!-- Scrollspy Content -->
-    <div class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
-      <section id="section1">
-        <h4>Geography</h4>
-        <p>Tajikistan is a landlocked country in Central Asia, bordered by Afghanistan, China, Kyrgyzstan,
-          and Uzbekistan. Approximately 93% of the country's territory is mountainous, with the Pamir Mountains,
-          often called the "Roof of the World," housing some of the highest peaks, including Ismoil Somoni Peak
-          at 7,495 meters. These towering ranges dominate the landscape and provide dramatic scenery, making 
-          Tajikistan a haven for mountaineers and nature enthusiasts. The country's rivers, like the Amu Darya 
-          and Panj, and glaciers, including the Fedchenko Glacier—the largest non-polar glacier—are critical for 
-          both agriculture and hydropower, shaping Tajikistan’s geography and economy.</p>
-      </section>
-      <section id="section2">
-        <h4>History</h4>
-        <p>
-Tajikistan's history spans thousands of years, with the region playing a key role in ancient Persian empires, and
-          later coming under the influence of Alexander the Great, Arab invaders, and the Mongols. In the 19th 
-          century, it became part of the Russian Empire, and after the Russian Revolution, Tajikistan was incorporated
-          into the Soviet Union in 1929. Following the collapse of the Soviet Union, Tajikistan declared its independence
-          in 1991. However, the country soon faced a devastating civil war from 1992 to 1997, which resulted in significant
-          loss of life and economic hardship. The civil war left deep scars on the nation, but the subsequent peace 
-          agreement helped establish a fragile stability, allowing the country to slowly rebuild.</p>
-      </section>
-      <section id="section3">
-        <h4>Economy</h4>
-        <p>Tajikistan's economy is heavily reliant on agriculture, aluminum production, and hydropower, with the latter
-          accounting for nearly all of the country's electricity generation. The fertile Fergana Valley supports a significant
-          portion of its agricultural output, including cotton, fruits, and grains. Additionally, Tajikistan is rich in natural
-          resources such as gold, silver, and uranium, though many of these resources remain underdeveloped. Aluminum production,
-          centered at the Tajik Aluminum Company (TALCO), is one of the country's main industrial exports. Remittances from Tajik
-          citizens working abroad, especially in Russia, play a crucial role in the economy, often exceeding half of the nation's
-          GDP, making Tajikistan one of the most remittance-dependent countries in the world.</p>
-      </section>
-      <section id="section4">
-        <h4>Tourism</h4>
-        <p>Tourism in Tajikistan is steadily growing, driven by the country's breathtaking natural landscapes and rich cultural
-          heritage. The Pamir Highway, one of the highest and most scenic roads in the world, is a major draw for adventure travelers,
-          offering stunning views of the Pamir Mountains and access to remote, traditional villages. In addition to the dramatic 
-          mountain scenery, Tajikistan's ancient Silk Road sites, such as the Hisor Fortress and the ruins of Sarazm, provide visitors
-          with a glimpse into the region's long and diverse history. With its blend of adventure, history, and hospitality, Tajikistan
-          is becoming an increasingly popular destination for those seeking off-the-beaten-path travel experiences.</p>
-      </section>
     </div>
+  </nav>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-  </body>
+  <!-- Scrollspy Navbar -->
+  <nav id="navbar-example2" class="navbar bg-light px-3 mb-3">
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#section1">Geography</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section2">History</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section3">Economy</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#section4">Tourism</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Scrollspy Content -->
+  <div class="scrollspy-example bg-light p-3 rounded-2" tabindex="0">
+    <section id="section1">
+      <h4>Geography</h4>
+      <p>Tajikistan is a landlocked country in Central Asia, bordered by Afghanistan, China, Kyrgyzstan,
+        and Uzbekistan. Approximately 93% of the country's territory is mountainous, with the Pamir Mountains,
+        often called the "Roof of the World," housing some of the highest peaks, including Ismoil Somoni Peak
+        at 7,495 meters. These towering ranges dominate the landscape and provide dramatic scenery, making 
+        Tajikistan a haven for mountaineers and nature enthusiasts. The country's rivers, like the Amu Darya 
+        and Panj, and glaciers, including the Fedchenko Glacier—the largest non-polar glacier—are critical for 
+        both agriculture and hydropower, shaping Tajikistan’s geography and economy.</p>
+    </section>
+    <section id="section2">
+      <h4>History</h4>
+      <p>Tajikistan's history spans thousands of years, with the region playing a key role in ancient Persian empires, and
+        later coming under the influence of Alexander the Great, Arab invaders, and the Mongols. In the 19th 
+        century, it became part of the Russian Empire, and after the Russian Revolution, Tajikistan was incorporated
+        into the Soviet Union in 1929. Following the collapse of the Soviet Union, Tajikistan declared its independence
+        in 1991. However, the country soon faced a devastating civil war from 1992 to 1997, which resulted in significant
+        loss of life and economic hardship. The civil war left deep scars on the nation, but the subsequent peace 
+        agreement helped establish a fragile stability, allowing the country to slowly rebuild.</p>
+    </section>
+    <section id="section3">
+      <h4>Economy</h4>
+      <p>Tajikistan's economy is heavily reliant on agriculture, aluminum production, and hydropower, with the latter
+        accounting for nearly all of the country's electricity generation. The fertile Fergana Valley supports a significant
+        portion of its agricultural output, including cotton, fruits, and grains. Additionally, Tajikistan is rich in natural
+        resources such as gold, silver, and uranium, though many of these resources remain underdeveloped. Aluminum production,
+        centered at the Tajik Aluminum Company (TALCO), is one of the country's main industrial exports. Remittances from Tajik
+        citizens working abroad, especially in Russia, play a crucial role in the economy, often exceeding half of the nation's
+        GDP, making Tajikistan one of the most remittance-dependent countries in the world.</p>
+    </section>
+    <section id="section4">
+      <h4>Tourism</h4>
+      <p>Tourism in Tajikistan is steadily growing, driven by the country's breathtaking natural landscapes and rich cultural
+        heritage. The Pamir Highway, one of the highest and most scenic roads in the world, is a major draw for adventure travelers,
+        offering stunning views of the Pamir Mountains and access to remote, traditional villages. In addition to the dramatic 
+        mountain scenery, Tajikistan's ancient Silk Road sites, such as the Hisor Fortress and the ruins of Sarazm, provide visitors
+        with a glimpse into the region's long and diverse history. With its blend of adventure, history, and hospitality, Tajikistan
+        is becoming an increasingly popular destination for those seeking off-the-beaten-path travel experiences.</p>
+    </section>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script>
+    // Function 5: Enhances navigation through various content sections using Bootstrap's Scrollspy.
+  </script>
+</body>
 </html>
